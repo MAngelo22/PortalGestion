@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Cargar AngularJS una sola vez -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+
+    <!-- Cargar tus scripts después -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/loginController.js"></script>
+    <script src="js/controllers/crudController.js"></script>
+    <script src="js/services/authService.js"></script>
+    <script src="js/services/dataService.js"></script>
+</head>
+<body>
+    <ng-view></ng-view> <!-- Esta es la vista donde se cargarán las plantillas -->
+</body>
+</html>
